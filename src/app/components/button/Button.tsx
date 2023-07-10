@@ -6,7 +6,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, className, text, disable, type = 'button', ...props }, ref) => {
+  ({ children, className, text, disable, type, ...props }, ref) => {
     return (
       <button
         type={type}
@@ -29,6 +29,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         `,
           className,
         )}
+        // eslint-disable-next-line react/no-unknown-property
+        text={text}
         disabled={disable}
         ref={ref}
         {...props}
