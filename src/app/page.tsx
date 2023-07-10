@@ -1,9 +1,5 @@
-import Image from 'next/image'
+import UserLoginContent from './components/User/UserLoginContent'
 
 export default function Home() {
-  return (
-   <div className="h-screen text-white font-black bg-gray-950 text-3xl flex items-center justify-center">
-     Hello Igor
-   </div>
-  )
+  return <UserLoginContent></UserLoginContent>
 }
