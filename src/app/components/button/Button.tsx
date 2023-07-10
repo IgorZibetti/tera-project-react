@@ -31,8 +31,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonPropss>(
         `,
           className,
         )}
-        // eslint-disable-next-line react/no-unknown-property
-        text={text}
         disabled={disable}
         ref={ref}
         {...props}
