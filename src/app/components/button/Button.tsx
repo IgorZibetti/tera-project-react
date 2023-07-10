@@ -3,6 +3,8 @@ import { twMerge } from 'tailwind-merge'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   disable?: boolean
+  text?: string
+  className?: string
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
