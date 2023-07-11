@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import Button from '../button/Button'
 import UserModal from './UserModal'
 import UserOption from './UserOption'
 import Image from 'next/image'
@@ -24,7 +23,6 @@ const UserLoginContent = ({ className, children }: UserLoginContentProps) => {
           height={200}
         />
         <UserOption />
-        <Button type="submit">Enviar</Button>
       </UserModal>
     </div>
   )
